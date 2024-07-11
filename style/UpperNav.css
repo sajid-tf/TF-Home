@@ -1,0 +1,184 @@
+.top_bar {
+  height: 50px;
+  width: 100%;
+  background-color: var(--primary);
+  align-items: center;
+}
+
+.top_bar_menu {
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.top_bar_menu>li {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: .15rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.call_request::before {
+  margin-right: .5rem;
+  height: .6rem;
+  width: .6rem;
+  background-color: #27ae60;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+}
+
+.call_request a {
+  color: white !important;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.country_num_wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.wts_icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  white-space: nowrap;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: -74px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 11rem;
+  padding: .5rem 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: .25rem;
+}
+
+
+.tel_icon {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+.flag_icon {
+  height: 22px;
+  width: 32px;
+}
+
+.icon_flag_wrapper {
+  width: 50px;
+  padding-left: 10px;
+}
+
+.main_number {
+  position: relative;
+  padding: 14px 10px;
+}
+
+.country_num_wrapper>.main_number>div:nth-child(2) {
+  position: absolute;
+  min-width: 215px;
+  top: 48px;
+  display: none;
+}
+
+.country_number {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: red;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  padding: 10px 15px 15px 10px !important;
+  gap: 15px !important;
+  background-color: var(--primary);
+}
+
+
+.country_num_wrapper>.main_number>div:nth-child(2) {
+  position: absolute;
+  min-width: 215px;
+  top: 48px;
+  display: none;
+}
+
+.country_num_wrapper>.main_number:hover>div:nth-child(2) {
+  display: block !important;
+}
+
+.wts_icon:hover+.dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  color: #4d4d4d !important;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #182f59;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 8px;
+  clear: both;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.country_num_wrapper a:hover {
+  color: #e4002b;
+}
+
+.country_num_wrapper>.main_number:hover #dialer_icon {
+  display: none;
+}

@@ -1,0 +1,400 @@
+.common-btn {
+    width: fit-content;
+    height: 41px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.common-btn:hover {
+    cursor: pointer;
+}
+
+.common-btn:active {
+    transform: scale(0.80);
+    transition: all 0.3s ease;
+}
+
+.processIndex-0 {
+    left: 0;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.processIndex-1 {
+    left: -244px;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.processIndex-2 {
+    left: -488px;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.processIndex-3 {
+    left: -732px;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.processIndex-4 {
+    left: -976px;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.processChevronIndex-0 {
+    left: 210px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+.processChevronIndex-1 {
+    left: 460px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+.processChevronIndex-2 {
+    left: 705px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+.processChevronIndex-3 {
+    left: 945px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+.processChevronIndex-4 {
+    left: 1200px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTwo {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in {
+    animation: slideIn 0.5s ease forwards;
+}
+
+.animate-slide-in-two {
+    animation: slideInTwo 0.5s ease forwards;
+}
+
+@keyframes slideInReverse {
+    from {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-reverse {
+    animation: slideInReverse 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-down {
+    animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes slideUpDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-up-down {
+    animation: slideUpDown 0.5s ease forwards;
+}
+
+@keyframes SlideOut {
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-out {
+    animation: SlideOut 0.5s ease forwards;
+}
+
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.rotate-transition {
+    animation: rotateIcon 0.5s ease forwards;
+}
+
+.testimonialProfile-0 {
+    width: 90px;
+    height: 90px;
+    top: 50%;
+    left: 2px;
+    z-index: 0;
+    filter: blur(2px);
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.testimonialProfile-1 {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50px;
+    z-index: 10;
+    filter: blur(2px);
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.testimonialProfile-2 {
+    width: 220px;
+    height: 220px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1));
+    transition: all 0.5s ease;
+}
+
+.testimonialProfile-3 {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    right: 50px;
+    z-index: 10;
+    filter: blur(2px);
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.testimonialProfile-4 {
+    width: 90px;
+    height: 90px;
+    top: 50%;
+    right: 2px;
+    z-index: 0;
+    filter: blur(2px);
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+/* Define keyframes for the animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(-100px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(100px, 0, 0);
+    }
+}
+
+/* Apply the animations to the slides */
+.splide__slide--next,
+.splide__slide--prev {
+    animation-duration: 8s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+.splide__slide--next {
+    animation-name: fadeIn;
+}
+
+.splide__slide--prev {
+    animation-name: fadeOut;
+}
+
+
+/* small screen css */
+@media only screen and (max-width: 600px) {
+    .processIndex-0 {
+        left: -12px !important;
+    }
+
+    .processIndex-1 {
+        left: -76px !important;
+    }
+
+    .processIndex-2 {
+        left: -136px !important;
+    }
+
+    .processIndex-3 {
+        left: -202px !important;
+    }
+
+    .processIndex-4 {
+        left: -268px !important;
+    }
+
+    .processChevronIndex-0 {
+        left: -5px !important;
+    }
+
+    .processChevronIndex-1 {
+        left: 60px !important;
+    }
+
+    .processChevronIndex-2 {
+        left: 120px !important;
+    }
+
+    .processChevronIndex-3 {
+        left: 185px !important;
+    }
+
+    .processChevronIndex-4 {
+        left: 250px !important;
+    }
+
+    .testimonialProfile-0 {
+        width: 28px;
+        height: 28px;
+        top: 50%;
+        left: 25px;
+        z-index: 0;
+        filter: blur(2px);
+        transform: translateY(-50%);
+        transition: all 0.5s ease;
+    }
+
+    .testimonialProfile-1 {
+        width: 47px;
+        height: 47px;
+        top: 50%;
+        left: 50px;
+        z-index: 10;
+        filter: blur(2px);
+        transform: translateY(-50%);
+        transition: all 0.5s ease;
+    }
+
+    .testimonialProfile-2 {
+        width: 69px;
+        height: 69px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1));
+        transition: all 0.5s ease;
+    }
+
+    .testimonialProfile-3 {
+        width: 47px;
+        height: 47px;
+        top: 50%;
+        right: 50px;
+        z-index: 10;
+        filter: blur(2px);
+        transform: translateY(-50%);
+        transition: all 0.5s ease;
+    }
+
+    .testimonialProfile-4 {
+        width: 28px;
+        height: 28px;
+        top: 50%;
+        right: 25px;
+        z-index: 0;
+        filter: blur(2px);
+        transform: translateY(-50%);
+        transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 768px) {
+    .common-btn {
+        height: 30px;
+        border-radius: 3px;
+        padding: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+}
